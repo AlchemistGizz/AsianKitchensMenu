@@ -1,0 +1,56 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #efebd7c4;
+    font-family: "Zilla Slab", serif;
+}
+ nav span {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #ff6a23;
+  }
+
+  #category-buttons button{
+   border: none;
+   font-style: italic;
+   border-radius: 10px;
+   font-size: 18px;
+   
+   opacity: 0.7;
+   background-color: rgb(242, 248, 242);
+   transition: all 0.3s ease;
+  }
+  #category-buttons button:hover {
+    transform: scale(1.1);  
+    opacity: 1;            
+  }
+  .carousel{
+    position: relative;
+  }
+  
+
+  @media (min-width: 700px){ 
+ .carousel-item  img{
+  margin-bottom: -500px;
+    
+   
+    
+}}
+ 
+div #imgDesc{
+    
+        position: absolute; 
+        top: 70%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: rgb(18, 1, 1); /* Yazının rengi beyaz */
+        text-align: center; 
+        width: 100%; 
+        background-color: rgba(226, 214, 214, 0.7); 
+        padding: 20px; 
+        font-style: italic;
+        
+}
+
