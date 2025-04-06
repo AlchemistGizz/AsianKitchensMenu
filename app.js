@@ -82,16 +82,16 @@ menu.forEach((item) => {
   colDiv.innerHTML = `
   
     <div class="card mb-3" style="max-width: 100%;">
-      <div class="row g-0">
+      <div class="row g-0 border border-danger-subtle  rounded">
         <div class="col-md-4 ">
            <img src="${item.img}" 
            alt="${item.title}" 
-           class="img-fluid rounded-start" 
+           class="img-fluid rounded-start border border-danger-subtle" 
            style="width: 100%; height: 100%; object-fit: cover;">
         </div>
         <div class="col-md-8 bg-warning-subtle">
-          <div class="card-body ">
-            <h4 class="card-title">${item.title} <br> $${item.price}</h4>
+          <div class="card-body  ">
+            <h4 class="card-title   ">${item.title} <br> $${item.price}</h4>
            <i> <p class="card-text">${item.desc}</p></i>
             <p class="card-text"><small class="text-body-secondary"></small></p>
           </div>
