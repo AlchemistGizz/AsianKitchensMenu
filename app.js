@@ -75,37 +75,37 @@ const menu = [
 
 const menuContainer = document.getElementById("menuContainer");
 
-menu.forEach((item) => {
-  const colDiv = document.createElement("div");
-  colDiv.className = "col-md-6 mb-4"; // 2 kolon (12/6 = 2 sütun)
+const displayMenu = (filteredMenu) => {
+  // Menü container'ını temizle
+  menuContainer.innerHTML = ""; 
 
-  colDiv.innerHTML = `
-  
-    <div class="card mb-3" style="max-width: 100%;">
-      <div class="row g-0 border border-danger-subtle  rounded">
-        <div class="col-md-4 ">
-           <img src="${item.img}" 
-           alt="${item.title}" 
-           class="img-fluid rounded-start border border-danger-subtle" 
-           style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="col-md-8 bg-warning-subtle">
-          <div class="card-body  ">
-            <h4 class="card-title   ">${item.title} <br> $${item.price}</h4>
-           <i> <p class="card-text">${item.desc}</p></i>
-            <p class="card-text"><small class="text-body-secondary"></small></p>
+  filteredMenu.forEach((item) => {
+    const colDiv = document.createElement("div");
+    colDiv.className = "col-md-6 mb-4"; // 2 kolon (12/6 = 2 sütun)
+
+    colDiv.innerHTML = `
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0 border border-danger-subtle  rounded">
+          <div class="col-md-4 ">
+            <img src="${item.img}" 
+                 alt="${item.title}" 
+                 class="img-fluid rounded-start border border-danger-subtle" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="col-md-8 bg-warning-subtle">
+            <div class="card-body">
+              <h4 class="card-title">${item.title} <br> $${item.price}</h4>
+              <i><p class="card-text">${item.desc}</p></i>
+              <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  `;
+    `;
 
-  menuContainer.appendChild(colDiv);
-});
-
-
-
-
+    menuContainer.appendChild(colDiv);
+  });
+};
 
 displayMenu(menu);
 document
