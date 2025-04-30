@@ -76,23 +76,24 @@ const menu = [
 const menuContainer = document.getElementById("menuContainer");
 
 const displayMenu = (filteredMenu) => {
-  // Menü container'ını temizle
-  menuContainer.innerHTML = ""; 
+  menuContainer.innerHTML = "";
 
   filteredMenu.forEach((item) => {
     const colDiv = document.createElement("div");
-    colDiv.className = "col-md-6 mb-4"; // 2 kolon (12/6 = 2 sütun)
+    colDiv.className = "col-md-6 mb-4"; 
 
     colDiv.innerHTML = `
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="row g-0 border border-danger-subtle  rounded">
-          <div class="col-md-4 ">
+        <div class="row g-0 border border-danger-subtle rounded">
+          <div class="col-md-4">
             <img src="${item.img}" 
-               alt="${item.title}" 
+                 alt="${item.title}" 
                  class="img-fluid rounded-start border border-danger-subtle card-img"
-                 style="object-fit: cover;">
+                 style="object-fit: cover; height: 200px;">
+          </div>  <!-- Bu kapanış doğru yerleştirildi -->
+          
           <div class="col-md-8 bg-warning-subtle">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h4 class="card-title">${item.title} <br> $${item.price}</h4>
               <i><p class="card-text">${item.desc}</p></i>
               <p class="card-text"><small class="text-body-secondary"></small></p>
@@ -105,6 +106,7 @@ const displayMenu = (filteredMenu) => {
     menuContainer.appendChild(colDiv);
   });
 };
+
 
 displayMenu(menu);
 document
