@@ -88,10 +88,9 @@ const displayMenu = (filteredMenu) => {
         <div class="row g-0 border border-danger-subtle  rounded">
           <div class="col-md-4 ">
             <img src="${item.img}" 
-                 alt="${item.title}" 
-                 class="img-fluid rounded-start border border-danger-subtle" 
-                 style="width: 100%; height: 100%; object-fit: cover;">
-          </div>
+               alt="${item.title}" 
+                 class="img-fluid rounded-start border border-danger-subtle card-img"
+                 style="object-fit: cover;">
           <div class="col-md-8 bg-warning-subtle">
             <div class="card-body">
               <h4 class="card-title">${item.title} <br> $${item.price}</h4>
