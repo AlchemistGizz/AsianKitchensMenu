@@ -7,7 +7,7 @@
 
 ## Overview
 
-This project is called **"Asian Kitchen's Menu"** and was created as a part of the [Kodluyoruz](https://www.kodluyoruz.org) Frontend Web Development course assignments.
+This project is called **"Asian Kitchen's Menu"** and was created as a part of the [Patika and Kodluyoruz Frontend-Beginner-Path]([https://www.kodluyoruz.org](https://academy.patika.dev/courses/javascript/object-nesne-nedir-nasil-olusturulur)) Frontend Web Development course assignments.
 
 The aim of the project was to dynamically display a menu list using **HTML**, **CSS**, **Bootstrap**, and **JavaScript** based on provided resources.
 
