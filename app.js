@@ -21,7 +21,7 @@ const menu = [
     category: "Korea",
     price: 8.99,
     img: "https://dwellbymichelle.com/wp-content/uploads/2020/05/DWELL-bibimbap.jpg",
-    desc: `Boiling vegetables, serving with special hot sauce`,
+    desc: `Boiling vegetables, serving with special hot sauce.`,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const menu = [
     category: "China",
     price: 5.99,
     img: "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480/img/recipe/ras/Assets/3E4C2DED-D0F9-45CD-B476-8BA54E533AD9/Derivates/d17260c9-bc36-4fb0-bbf1-3b4b8427be74.jpg",
-    desc: `Dan dan noodle, serving with green onion `,
+    desc: `Dan dan noodle, serving with green onion. `,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const menu = [
     category: "China",
     price: 12.99,
     img: "https://salu-salo.com/wp-content/uploads/2013/02/Yangzhou-Fried-Rice1.jpg",
-    desc: `Yangzhou style fried rice, serving with bean and pickles `,
+    desc: `Yangzhou style fried rice, serving with bean and pickles. `,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const menu = [
     category: "Japan",
     price: 9.99,
     img: "https://www.manusmenu.com/wp-content/uploads/2017/08/Onigiri-3-1-of-1.jpg",
-    desc: `Rice Sandwich, serving with soy sauce`,
+    desc: `Rice Sandwich, serving with soy sauce.`,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const menu = [
     category: "Korea",
     price: 15.99,
     img: "https://www.curiouscuisiniere.com/wp-content/uploads/2020/04/Jajangmyeon-Korean-Noodles-in-Black-Bean-Sauce5.1200H-720x540.jpg",
-    desc: `Black bean sauce noodle, serving with green onion `,
+    desc: `Black bean sauce noodle, serving with green onion. `,
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const menu = [
     category: "China",
     price: 12.99,
     img: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/F688C2F6-86EC-46C4-B9C7-A6BA01DF7437/Derivates/32E3E72A-F786-406D-AF7F-B30980A9AC6C.jpg",
-    desc: `Hot pepper sauce noodle, serving with soy bean and onion`,
+    desc: `Hot pepper sauce noodle, serving with soy bean and onion.`,
   },
   {
     id: 9,
