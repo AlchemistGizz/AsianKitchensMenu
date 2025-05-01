@@ -75,10 +75,8 @@ const menu = [
 
 const menuContainer = document.getElementById("menuContainer");
 
-const displayMenu = (filteredMenu) => {
-  menuContainer.innerHTML = "";
 
-  const displayMenu = (filteredMenu) => {
+ const displayMenu = (filteredMenu) => {
  
   menuContainer.innerHTML = ""; 
 
